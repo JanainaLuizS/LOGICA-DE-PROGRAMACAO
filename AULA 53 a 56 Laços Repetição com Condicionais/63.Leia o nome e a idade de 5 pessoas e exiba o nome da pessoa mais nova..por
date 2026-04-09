@@ -21,4 +21,3 @@ programa {
 }
 63.Leia o nome e a idade de 5 pessoas e exiba o nome da pessoa mais nova. 
 Pessoa mais nova (Nome e Idade)
-Este segue a lógica do "campeão" que vimos antes, mas agora guardamos o nome também.
