@@ -7,7 +7,7 @@ programa {
     {
         se (i % numero == 0)
         {
-            escreva(i, " ")
+            escreva(i, " ") // sendo verdadeiro o se ele vai mostrar na tela o i
         }
     }
   }
