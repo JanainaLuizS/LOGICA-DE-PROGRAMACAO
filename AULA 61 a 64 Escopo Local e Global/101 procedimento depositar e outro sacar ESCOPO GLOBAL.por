@@ -5,7 +5,7 @@ programa {
 // procedimento para aumentar saldo
   funcao depositar ( real valor){ 
      saldo= saldo + valor       //ou pode ser também saldo+ = deposito            //Dica de ouro: Sempre pergunte: "Quem eu quero mudar?". Se é o saldo, o saldo tem que vir antes 
-  
+      
       escreva ("Depósito de R$:", valor ) //fim do 1° procedimento  
   } 
 // Procedimento para diminuir o saldo
