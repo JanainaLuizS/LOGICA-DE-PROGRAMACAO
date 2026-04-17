@@ -1,10 +1,10 @@
 programa {
   funcao inicio() {
 
-    real numeros [3]= {6.0, 5.0 ,5.0}
+    real notas [3]= {6.0, 5.0 ,5.0}
     real media
 
-    media = (numeros[0] + numeros[1]+ numeros[2]) / 3
+    media = (notas[0] + notas[1]+ notas[2]) / 3
 
     escreva ("Média do aluno: ", media)
     
