@@ -4,7 +4,7 @@ programa {
     real numeros [3]= {6.0, 5.0 ,5.0}
     real media
 
-    media = (numeros[0] + numeros[1]+ numeros[2]) / 2
+    media = (numeros[0] + numeros[1]+ numeros[2]) / 3
 
     escreva ("Média do aluno: ", media)
     
