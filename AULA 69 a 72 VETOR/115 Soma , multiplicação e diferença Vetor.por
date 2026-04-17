@@ -3,19 +3,19 @@ programa {
 
     inteiro numeros[4] = {10, 10, 10, 10}
 
-    inteiro soma
+   / inteiro soma
     inteiro multiplicacao
     inteiro diferenca
 
     soma = (numeros[0] + numeros[1]+ numeros[2])
     multiplicacao = (numeros[0] * numeros[1])
-    diferenca = (numeros[2]- numeros[0])
+    diferenca = (numeros[2]- numeros[0])/ não precisa fazer assim de forma analática
 
 
 
-    escreva ("Soma: ",soma,"\n")
-    escreva ("Multiplicação: ",multiplicacao,"\n")
-    escreva ("Diferença: ",diferenca, "\n")
+    escreva ("Soma: ",numeros[0] + numeros[1]+ numeros[2], "\n") // faz assim de forma sintética , VEJA QUE NÃO PRECISA COLOCAR O TIPO
+    escreva ("Multiplicação: ",numeros[0] * numeros[1],"\n")
+    escreva ("Diferença: ",numeros[2]- numeros[0] "\n")
     
 
 
