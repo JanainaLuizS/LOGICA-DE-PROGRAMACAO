@@ -5,7 +5,7 @@ programa {
 
       para(inteiro i=0; i<8 ; i++){ // são 8 números
       
-      se (numeros[1]>10){ //é mesma coisa que  soma= soma+ numeros [i] QNDO QUERO ACESSAR UM NÚMERO DENTRO DO VETOR TENHO QUE COLOCAR  O NOME DO VETOR, NO CASO NUMERO [I]
+      se (numeros[i]>10){ //é mesma coisa que  soma= soma+ numeros [i] QNDO QUERO ACESSAR UM NÚMERO DENTRO DO VETOR TENHO QUE COLOCAR  O NOME DO VETOR, NO CASO NUMERO [I]
       contador= contador+1 
      }
       
