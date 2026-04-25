@@ -17,6 +17,9 @@ Exemplo: Uma peça de roupa com 20% de desconto para pagamento à vista.
 Comissões: salarioFixo + (vendas * 0.15)
 
 Note que aqui as variáveis são diferentes, mas a lógica de "valor base + parte calculada" é a mesma.//
-    
+
+//Resumo da regra de ouro:
+//Use Variavel + (Variavel * Taxa) quando você quer atualizar o valor de uma coisa só (como o rendimento da poupança do exercício 9).
+//Use Variavel * Taxa (separado) quando você tem várias taxas diferentes que precisam ser somadas juntas no final (como o caso do carro)
   }
 }
