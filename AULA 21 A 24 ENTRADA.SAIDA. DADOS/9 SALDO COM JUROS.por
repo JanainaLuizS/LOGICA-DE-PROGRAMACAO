@@ -11,8 +11,9 @@ programa {
 
     escreva ( " O total deposito com juros é: ", rendimento)
 
-
-    
+//Resumo da regra de ouro:
+//Use Variavel + (Variavel * Taxa) quando você quer atualizar o valor de uma coisa só (como o rendimento da poupança do exercício 9).
+//Use Variavel * Taxa (separado) quando você tem várias taxas diferentes que precisam ser somadas juntas no final (como o caso do carro)
   }
 }
 9. Faça um algoritmo que receba um valor que foi depositado e exiba o valor com
