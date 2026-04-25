@@ -1,14 +1,14 @@
 programa {
   funcao inicio() {
 
-    real valorReal, Cotacao, Dolar
+    real valorReal, cotacao, dolar
 
     escreva("Valor da cotação: ")
-    leia(Cotacao)
+    leia(cotacao)
      escreva("Quantitades de dolares: ")
-    leia(Dolar)
+    leia(dolar)
 
-    valorReal= Cotacao * Dolar
+    valorReal= cotacao * dolar
     
      escreva("Valor em Real equivale a:", valorReal)
 
