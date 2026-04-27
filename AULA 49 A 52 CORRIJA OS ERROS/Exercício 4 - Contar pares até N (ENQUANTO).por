@@ -18,11 +18,31 @@ programa {
 
 		escreva("Quantidade de pares = ", qtdPares)
 	}
-}
-
-    
+}    
   }
 }
 Exercício 4 - Contar pares até N (ENQUANTO)
-
 Leia N e mostre quantos números pares existem de 1 a N.
+
+programa {
+  funcao inicio() {
+    inteiro n, i = 1, nPares = 0
+
+    escreva("Contar pares até quanto? ")
+    leia(n)
+
+    // O laço deve continuar enquanto o nosso contador 'i' não chegar no limite 'n'
+    enquanto (i <= n) {
+      
+      // Verificamos se o número da vez (i) é par
+      se (i % 2 == 0) {
+        nPares = nPares + 1
+      }
+
+      // IMPORTANTE: O contador 'i' precisa aumentar para o laço andar!
+      i = i + 1
+    }
+
+    escreva("De 1 até ", n, " existem ", nPares, " números pares.")
+  }
+}
