@@ -1,16 +1,13 @@
 programa {
   funcao inicio() {
     
-		inteiro n, i, qtdPares
+		inteiro n, i = 1, qtdPares=0
 
 		escreva("Digite N: ")
 		leia(n)
 
-		i = 1
-		qtdPares = 0
-
-		enquanto (i <= n)
-		{
+		enquanto (i <= n) { // ENQUANTO O CONTADOR, i, for menor q N, n° usuário escolheu , continua testando pra ver se é par
+		
 			se (i % 2 == 0)
 			{
 				qtdPares = qtdPares + 1
