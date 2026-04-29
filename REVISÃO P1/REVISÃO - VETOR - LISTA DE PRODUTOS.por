@@ -26,6 +26,30 @@ programa {
     
   }
 }
+programa {
+  funcao inicio() {
+    // 1. O ARMÁRIO (Vetores) - Devem ter o tamanho fixo (3) 
+    cadeia nomesProdutos[3] 
+    real precosUnitarios[3]
+    inteiro i
+
+    // 2. PRIMEIRO PARA: ENTRADA (Carregando o armário)
+    para (i = 0; i < 3; i++) { //// Começa no 0
+      escreva("Nome do ", i + 1, "º produto: ") // i+1 para o usuário ver "1º" 
+      leia(nomesProdutos[i]) // Guarda na gaveta 'i' 
+      
+      escreva("Preço: ")
+      leia(precosUnitarios[i]) 
+    }
+
+    // 3. SEGUNDO PARA: SAÍDA (Mostrando a lista pronta) 
+    escreva("\n--- LISTA DE PRODUTOS ---")
+    para (i = 0; i < 3; i++) {
+      // Aqui você apenas "lê" o que já está guardado nas gavetas 
+      escreva("\nPreço unitário: ", precosUnitarios[i])
+    }
+  }
+}
 DESAFIO
 Desenvolva um algoritmo em Portugol que:
 • Utilize vetores (arrays) para armazenar:
