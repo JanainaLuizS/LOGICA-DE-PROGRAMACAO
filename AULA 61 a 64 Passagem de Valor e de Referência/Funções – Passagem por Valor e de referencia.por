@@ -1,6 +1,7 @@
 
 
 programa {
+//// Funções – Passagem por Valor
 
   funcao inicio() {
     // --- Exercício 103 ---
@@ -10,6 +11,9 @@ programa {
     escreva("\nValor antes: ", num103)
     resultado103 = somarDez(num103) // Atribuição do retorno
     escreva("\nValor depois: ", resultado103)
+
+103. Crie uma função chamada somarDez que receba um número e retorne o valor
+acrescido de 10.
     
     // --- Exercício 104 ---
     real num104 = 15.5
