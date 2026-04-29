@@ -14,8 +14,13 @@ programa {
 
   funcao inicio() {
 
-    mostrarMultiplos(5)
-    
+inteiro n
+
+    escreva ("Digite o número ", n)
+    leia (n)
+
+    mostrarMultiplos(n)
+        
   }
 }
 
