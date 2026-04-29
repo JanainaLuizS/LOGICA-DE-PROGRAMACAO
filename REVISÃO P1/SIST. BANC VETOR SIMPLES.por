@@ -32,8 +32,8 @@ programa { // exercício guarde o histórico
 				
 				// GUARDANDO NO VETOR: Se houver espaço no histórico (até 5)
 				se (indiceHistorico < 5) {
-					historico[indiceHistorico] = valorOperacao
-					indiceHistorico = indiceHistorico + 1
+					historico[indiceHistorico] = valorOperacao //  Vá até a gaveta de número X do meu arquivo de histórico e guarde o valor desta venda lá dentro."Problema: Se você parar aqui, a próxima venda vai ser escrita nO MSM ARQUIVO, apagando a anterior!
+					indiceHistorico = indiceHistorico + 1 //Você está dizendo: "POR ISSO, desça uma linha, GAVETA".Na próxima vez que o código rodar, ele vai usar a gaveta 1, deixando a 0 salva e protegida
 				}
 				escreva("Sucesso!\n")
 			} 
