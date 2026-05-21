@@ -5,11 +5,40 @@ programa {
 
     cadeia nome = "Maria"
     escreva( t.numero_caracteres(nome), "\n" )
-    escreva(t. extrair_subtexto (nome, 0,1)=="","\n")
+    escreva(t. extrair_subtexto (nome, 0,1)=="","\n") /*A função t.extrair_subtexto(nome, 0, 1) faz um "recorte" no texto. Ela pega o caractere que está na posição 0 (a primeira letra)
+                                                       até antes da posição 1. Ou seja, ela pega apenas a primeiríssima letra que o usuário digitou.*/
   }
 }
 //COMO DEIXAR O USUÁRIO DIGITAR ESPACO
-//USAR A BIBLIOTECA: txt.substituir
+
+inclua biblioteca Texto --> t
+
+    // Função para texto obrigatório usando a lógica do professor
+    funcao cadeia lerTextoObrigatorio(cadeia mensagem) {
+        cadeia valor
+
+        escreva(mensagem)
+        leia(valor)
+
+        /* O 'enquanto' vai barrar o usuário se:
+           O valor for vazio OU se a primeira letra digitada for um espaço (" ")
+        */
+        enquanto(valor == "" ou t.extrair_subtexto(valor, 0, 1) == " ") {
+            escreva("Erro: o campo não pode ficar vazio ou começar com espaços.\n")
+            escreva(mensagem)
+            leia(valor)
+        }
+
+        retorne valor
+    }
+
+
+
+
+
+
+
+//ou USAR A BIBLIOTECA: txt.substituir
 // Sintaxe: txt.substituir(texto_original, o_que_procurar, o_que_colocar_no_lugar)
 valorSemEspaco = txt.substituir(valor, " ", "")
 
