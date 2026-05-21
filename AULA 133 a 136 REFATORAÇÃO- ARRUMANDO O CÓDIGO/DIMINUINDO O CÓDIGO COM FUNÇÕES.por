@@ -1,16 +1,29 @@
 programa {
+    // Incluindo a biblioteca necessária para manipular os espaços
+    inclua biblioteca Texto --> txt
 
-    // Função para ler texto obrigatório
+    // Função para ler texto obrigatório (ajustada para ignorar espaços vazios)
     funcao cadeia lerTextoObrigatorio(cadeia mensagem, cadeia erro) {
-        cadeia valor
+
+        cadeia valor            // Guarda EXATAMENTE o que o usuário digitou (com ou sem espaços).
+        cadeia valorSemEspaco   // Guarda uma cópia do que foi digitado, mas "espremido" (sem espaço nenhum).
 
         escreva(mensagem)
         leia(valor)
 
-        enquanto(valor == "") {
+        // Remove todos os espaços do que foi digitado para fazer a validação
+      
+		valorSemEspaco = txt.substituir(valor, " ", "")
+
+        // Se o resultado for vazio ou apenas espaços, entra no laço de erro
+
+        enquanto(valorSemEspaco == "") {
             escreva(erro, "\n")
             escreva(mensagem)
             leia(valor)
+            
+            // Atualiza a variável de validação com a nova entrada do usuário
+            valorSemEspaco = txt.substituir(valor, " ", "") // Limpa a nova tentativa para testar no próximo ciclo do 'enquanto'
         }
 
         retorne valor
@@ -22,12 +35,12 @@ programa {
 
         nome = lerTextoObrigatorio(
             "Digite o nome do aluno: ",
-            "Erro: o nome não pode ficar vazio."
+            "Erro: o nome não pode ficar vazio ou conter apenas espaços."
         )
 
         curso = lerTextoObrigatorio(
             "Digite o nome do curso: ",
-            "Erro: o curso não pode ficar vazio."
+            "Erro: o curso não pode ficar vazio ou conter apenas espaços."
         )
 
         escreva("\nCadastro realizado com sucesso!\n")
