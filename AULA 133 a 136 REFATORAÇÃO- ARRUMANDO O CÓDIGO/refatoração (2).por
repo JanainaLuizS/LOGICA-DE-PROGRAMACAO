@@ -1,28 +1,24 @@
 programa {
-    // 1. Incluímos a biblioteca Texto bem aqui no topo
-    inclua biblioteca Texto --> txt
+    // Incluindo a biblioteca Texto como 't', igual o professor usou
+    inclua biblioteca Texto --> t
 
-    // Função para texto obrigatório (ajustada para bloquear espaços vazios)
+    // Função para texto obrigatório usando a lógica do professor
     funcao cadeia lerTextoObrigatorio(cadeia mensagem) {
         cadeia valor
-        cadeia valorSemEspaco // Variável interna para fazer o teste
 
         escreva(mensagem)
         leia(valor)
 
-        // Usa o substituir para tirar os espaços antes de testar no enquanto
-        valorSemEspaco = txt.substituir(valor, " ", "")
-
-        enquanto(valorSemEspaco == "") {
-            escreva("Erro: o campo não pode ficar vazio ou conter apenas espaços.\n")
+        /* O 'enquanto' vai barrar o usuário se:
+           O valor for vazio OU se a primeira letra digitada for um espaço (" ")
+        */
+        enquanto(valor == "" ou t.extrair_subtexto(valor, 0, 1) == " ") {
+            escreva("Erro: o campo não pode ficar vazio ou começar com espaços.\n")
             escreva(mensagem)
             leia(valor)
-            
-            // Limpa os espaços da nova tentativa do usuário
-            valorSemEspaco = txt.substituir(valor, " ", "")
         }
 
-        retorne valor // Devolve o texto original (com espaços legítimos, se houver)
+        retorne valor
     }
 
     // Função para ler nota com validação (permanece igual)
