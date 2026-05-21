@@ -1,22 +1,31 @@
 programa {
+    // 1. Incluímos a biblioteca Texto bem aqui no topo
+    inclua biblioteca Texto --> txt
 
-    // Função para texto obrigatório
+    // Função para texto obrigatório (ajustada para bloquear espaços vazios)
     funcao cadeia lerTextoObrigatorio(cadeia mensagem) {
         cadeia valor
+        cadeia valorSemEspaco // Variável interna para fazer o teste
 
         escreva(mensagem)
         leia(valor)
 
-        enquanto(valor == "") {
-            escreva("Erro: o campo não pode ficar vazio.\n")
+        // Usa o substituir para tirar os espaços antes de testar no enquanto
+        valorSemEspaco = txt.substituir(valor, " ", "")
+
+        enquanto(valorSemEspaco == "") {
+            escreva("Erro: o campo não pode ficar vazio ou conter apenas espaços.\n")
             escreva(mensagem)
             leia(valor)
+            
+            // Limpa os espaços da nova tentativa do usuário
+            valorSemEspaco = txt.substituir(valor, " ", "")
         }
 
-        retorne valor
+        retorne valor // Devolve o texto original (com espaços legítimos, se houver)
     }
 
-    // Função para ler nota com validação
+    // Função para ler nota com validação (permanece igual)
     funcao real lerNotaValida(cadeia mensagem, real minimo, real maximo) {
         real nota
 
