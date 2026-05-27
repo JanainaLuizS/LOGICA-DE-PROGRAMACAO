@@ -14,15 +14,15 @@ public class CrescimentoDemografico {
 		
 		System.out.printf("População Atual %d%n", populacaoAtual);
 		
-		System.out.printf("Crescimento Anual %2.f%n", taxaCrescimento * 100);
+		System.out.printf("Crescimento Anual %.2f%%%n", taxaCrescimento * 100);
 		
-		System.out.printf("População estimada depois de 1: f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,1));
-		System.out.printf("População estimada depois de 2: f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,2));
-		System.out.printf("População estimada depois de 3: f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,3));
-		System.out.printf("População estimada depois de 4: f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,4));
-		System.out.printf("População estimada depois de 5: f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,5));
+		System.out.printf("População estimada depois de 1: %.0f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,1));//Math.pow(base, expoente)
+		System.out.printf("População estimada depois de 2: %.0f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,2));//é uma ferramenta pronta do Java que serve para fazer contas de potenciação (elevação ao quadrado, ao cubo, etc.).
+		System.out.printf("População estimada depois de 3: %.0f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,3));
+		System.out.printf("População estimada depois de 4: %.0f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,4));
+		System.out.printf("População estimada depois de 5: %.0f%n", populacaoAtual * Math.pow(1 + taxaCrescimento,5));
 		
-
+		entrada.close(); // Boa prática fechar o Scanner no fim
 	}
 
 }
