@@ -25,3 +25,20 @@ public class App {
 	}
 
 }
+/*Projeto Loja Virtual
+Você irá desenvolver um sistema em Java chamado ProjetoLojaVirtual, utilizando o
+pacote loja e tendo como arquivo principal a classe App.java.
+Nesse projeto, crie duas classes separadas: Produto.java e Cliente.java, ambas
+dentro do mesmo pacote. O objetivo é apenas praticar a criação de atributos
+privados, getters, setters e validações.
+A classe Produto deve possuir os atributos nome, preco e quantidadeEstoque, todos
+definidos como private. Implemente getters e setters para todos eles. O atributo
+preco deve aceitar apenas valores maiores que zero, e quantidadeEstoque não pode
+aceitar valores negativos.
+A classe Cliente deve possuir os atributos nome, idade e email, também definidos
+como private. Implemente getters e setters para todos os atributos. O atributo idade
+deve aceitar apenas valores maiores ou iguais a zero, e o email não pode ser vazio.
+No arquivo App.java, crie pelo menos um objeto da classe Produto e um objeto da
+classe Cliente. Utilize os setters para atribuir valores e os getters para exibir os dados
+no console. Teste também alguns valores inválidos para verificar se as validações
+estão funcionando corretamente.*/
