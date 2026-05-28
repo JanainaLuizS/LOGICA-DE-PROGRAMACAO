@@ -19,7 +19,7 @@ public class Medico {
 	}
 
 	public void setEspecialidade(String especialidade) { // validação
-		if (!especialidade.isEmpty()) {
+		if (especialidade != null && !especialidade.isEmpty()) {
 			this.especialidade = especialidade;
 		} else {
 			System.out.println("A especialidade não pode estar vazia.");
