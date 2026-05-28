@@ -11,7 +11,7 @@ public class Fornecedor {
 	}
 
 	public void setNome(String nome) { // validação
-		if (!nome.isEmpty()) {
+		if (nome != null && !nome.isEmpty()) {
 			this.nome = nome;
 		} else {
 			System.out.println("Nome não pode estar vazio.");
@@ -23,7 +23,7 @@ public class Fornecedor {
 	}
 
 	public void setCidade(String cidade) { // validação
-		if (!cidade.isEmpty()) {
+		if (cidade != && !cidade.isEmpty()) {
 			this.cidade = cidade;
 		} else {
 			System.out.println("Cidade não pode estar vazio.");
