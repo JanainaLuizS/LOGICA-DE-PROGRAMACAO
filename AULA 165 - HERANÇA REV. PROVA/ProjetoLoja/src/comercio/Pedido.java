@@ -3,7 +3,7 @@ package comercio;
 
 public class Pedido {
 	private String cliente;
-	private Produto produto;
+	private Produto produto;// ASSOCIAÇÃO
 	private int quantidade;
 
 	public String getCliente() {
