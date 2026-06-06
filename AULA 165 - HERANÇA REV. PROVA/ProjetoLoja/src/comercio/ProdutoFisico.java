@@ -30,7 +30,7 @@ public class ProdutoFisico extends Produto {
 	}
 
 	public double calcularValorTotal() {
-		return getPreco() + frete; // traz o preço que tá no produto
+		return getPreco() + frete; //// Retorna o preço do produto (vindo da classe pai) somado ao frete
 	}
 
 	// Método para exibir os dados
