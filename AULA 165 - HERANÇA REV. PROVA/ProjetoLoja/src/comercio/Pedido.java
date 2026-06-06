@@ -53,9 +53,11 @@ public class Pedido {
 														 * multiplicado pela quantidade.
 														 */
 
-		if (produto instanceof ProdutoFisico) {
+		if (produto instanceof ProdutoFisico) { /*Para descobrir se o produto enviado é físico ou digital, o Java usa uma palavra-chave chamada instanceof (que significa "é uma instância de"). 
+		                                         *Isso permite acessar os dados específicos de cada um.*/
 
-			ProdutoFisico produtoFisico = (ProdutoFisico) produto;
+			ProdutoFisico produtoFisico = (ProdutoFisico) produto;// Convertemos a referência genérica para o tipo específico (Downcasting)
+			
 			System.out.println("Frete: R$ " + produtoFisico.getFrete());
 
 			total = total + produtoFisico.getFrete();
